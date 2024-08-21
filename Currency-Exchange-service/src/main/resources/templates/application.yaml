@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: current-exchange-service
+  cloud:
+    config:
+      enabled: false
+  datasource:      
+    url: jdbc:mysql://localhost:3306/wipro_currency?createDatabaseIfNotExist=true
+    username: root
+    password: Ddg@8443
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    jpa:
+      hibernate:
+          ddl-auto:update
+server:
+  port: 7900
